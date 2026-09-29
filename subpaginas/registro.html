@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zootopia | Crear perfil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Righteous&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+
+<body class="pagina-registro">
+
+    <section class="registro">
+
+        <div class="registro-circulo circulo-uno"></div>
+        <div class="registro-circulo circulo-dos"></div>
+
+        <div class="registro-contenido">
+
+            <p class="registro-mini">
+                ÚLTIMA PARADA
+            </p>
+
+            <h1>
+                Creá tu perfil<br>
+                en Zootopia.
+            </h1>
+
+            <p class="registro-bajada">
+                Después de recorrer la ciudad, elegí cómo querés formar parte de este mundo.
+            </p>
+
+            <form action="bienvenida.php" method="post" class="registro-form">
+
+                <div class="registro-campo">
+
+                    <label for="nombre">
+                        TU NOMBRE
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribí tu nombre"
+                        required
+                    >
+
+                </div>
+
+                <div class="registro-campo">
+
+                    <label for="especie">
+                        ELEGÍ TU ESPECIE
+                    </label>
+
+                    <select
+                        id="especie"
+                        name="especie"
+                        required
+                    >
+
+                        <option value="">
+                            Seleccioná una opción
+                        </option>
+
+                        <option value="conejo">
+                            Conejo
+                        </option>
+
+                        <option value="zorro">
+                            Zorro
+                        </option>
+
+                        <option value="oso">
+                            Oso
+                        </option>
+
+                        <option value="ciervo">
+                            Ciervo
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button type="submit" class="registro-boton">
+                    CREAR MI PERFIL
+                    <span>→</span>
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="registro-lateral">
+
+            <p>
+                TU RECORRIDO
+            </p>
+
+            <div class="registro-pasos">
+
+                <span>01</span>
+                <span>02</span>
+                <span>03</span>
+                <span>04</span>
+                <span>05</span>
+                <span>06</span>
+
+            </div>
+
+            <strong>
+                Ya conociste la ciudad.<br>
+                Ahora elegí quién querés ser dentro de ella.
+            </strong>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
