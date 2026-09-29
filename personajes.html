@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zootopia | Personajes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Righteous&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="css/personajes.css?v=101">
+</head>
+
+
+
+<body class="pagina-personajes">
+
+
+    <!-- =====================================================
+         HERO PERSONAJES
+    ====================================================== -->
+
+    <section class="personajes-hero" id="inicio-personajes">
+
+        <header class="navbar personajes-navbar">
+
+            <a href="inicio.html" class="logo">
+                ZOOTOPIA
+            </a>
+
+            <nav>
+
+                <a href="inicio.html">Inicio</a>
+
+                <a href="subpaginas/historia.html">Historia</a>
+
+                <a href="personajes.html" class="nav-activo">Personajes</a>
+
+                <a href="subpaginas/distritos.html">Distritos</a>
+
+                <a href="subpaginas/mundo.html">Mundo Zootopia</a>
+
+                <a href="subpaginas/curiosidades.html">Curiosidades</a>
+
+                <a href="subpaginas/registro.html">Registrarse</a>
+
+            </nav>
+
+            <div class="search">
+                ⌕
+            </div>
+
+        </header>
+
+
+        <div class="personajes-hero-contenido">
+
+            <p class="personajes-mini">
+                CONOCÉ A QUIENES HACEN LA HISTORIA
+            </p>
+
+            <h1>
+                PERSONAJES
+            </h1>
+
+            <p class="personajes-bajada">
+                Cada habitante tiene su propia personalidad,
+                sus sueños y una forma distinta de ver la ciudad.
+            </p>
+
+            <a href="#protagonistas" class="personajes-hero-boton">
+
+                CONOCERLOS
+
+                <span>↓</span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CARRUSEL PRINCIPAL
+    ====================================================== -->
+
+    <section class="personajes-carrusel-seccion" id="protagonistas">
+
+        <div class="personajes-circulo circulo-tres"></div>
+
+        <div class="personajes-circulo circulo-cuatro"></div>
+
+
+        <div class="carrusel-encabezado">
+
+            <p>
+                PROTAGONISTAS
+            </p>
+
+            <h2>
+                Conocelos uno por uno.
+            </h2>
+
+            <span>
+                Usá las flechas para recorrer los personajes.
+            </span>
+
+        </div>
+
+
+        <div class="personajes-carrusel">
+
+
+            <!-- FLECHA IZQUIERDA -->
+
+            <button
+                class="personaje-flecha personaje-flecha-izquierda"
+                type="button"
+                id="personajeAnterior"
+                aria-label="Personaje anterior"
+            >
+                ←
+            </button>
+
+
+
+            <!-- TARJETA -->
+
+            <article class="personaje-principal">
+
+                <div class="personaje-imagen-contenedor">
+
+                    <img
+                        id="personajeImagen"
+                        src="imagenes/judy-zootopia .png"
+                        alt="Judy Hopps"
+                    >
+
+                    <div
+                        class="personaje-numero"
+                        id="personajeNumero"
+                    >
+                        01
+                    </div>
+
+                    <div class="personaje-color"></div>
+
+                </div>
+
+
+                <div class="personaje-info">
+
+                    <p
+                        class="personaje-tipo"
+                        id="personajeTipo"
+                    >
+                        CONEJA · OFICIAL DE POLICÍA
+                    </p>
+
+                    <h3 id="personajeNombre">
+                        Judy Hopps
+                    </h3>
+
+                    <p
+                        class="personaje-frase"
+                        id="personajeFrase"
+                    >
+                        “Si algo parece imposible, es porque todavía no lo intentaste.”
+                    </p>
+
+                    <p
+                        class="personaje-descripcion"
+                        id="personajeDescripcion"
+                    >
+                        Decidida, optimista y valiente. Judy llega a la gran ciudad
+                        con un objetivo claro: demostrar que cualquiera puede alcanzar
+                        lo que se propone.
+                    </p>
+
+
+                    <div
+                        class="personaje-etiquetas"
+                        id="personajeEtiquetas"
+                    >
+
+                        <span>VALIENTE</span>
+
+                        <span>OPTIMISTA</span>
+
+                        <span>DETERMINADA</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- FLECHA DERECHA -->
+
+            <button
+                class="personaje-flecha personaje-flecha-derecha"
+                type="button"
+                id="personajeSiguiente"
+                aria-label="Siguiente personaje"
+            >
+                →
+            </button>
+
+        </div>
+
+
+
+        <!-- PUNTOS -->
+
+        <div
+            class="personajes-puntos"
+            id="personajesPuntos"
+        >
+
+            <!-- 01 · JUDY -->
+
+            <button
+                class="punto-personaje activo"
+                type="button"
+                aria-label="Ver Judy Hopps"
+            ></button>
+
+
+            <!-- 02 · NICK -->
+
+            <button
+                class="punto-personaje"
+                type="button"
+                aria-label="Ver Nick Wilde"
+            ></button>
+
+
+            <!-- 03 · FLASH -->
+
+            <button
+                class="punto-personaje"
+                type="button"
+                aria-label="Ver Flash"
+            ></button>
+
+
+            <!-- 04 · CHIEF BOGO -->
+
+            <button
+                class="punto-personaje"
+                type="button"
+                aria-label="Ver Chief Bogo"
+            ></button>
+
+
+            <!-- 05 · BELLWETHER -->
+
+            <button
+                class="punto-personaje"
+                type="button"
+                aria-label="Ver Bellwether"
+            ></button>
+
+
+            <!-- 06 · FINNICK -->
+
+            <button
+                class="punto-personaje"
+                type="button"
+                aria-label="Ver Finnick"
+            ></button>
+
+
+            <!-- 07 · CLAWHAUSER -->
+
+            <button
+                class="punto-personaje"
+                type="button"
+                aria-label="Ver Clawhauser"
+            ></button>
+
+        </div>
+
+    </section>
+
+
+
+<!-- =====================================================
+     ARMÁ TU EQUIPO
+====================================================== -->
+
+<section class="arma-equipo" id="arma-equipo">
+
+    <div class="equipo-encabezado">
+
+        <p class="equipo-mini">
+            TU TURNO
+        </p>
+
+        <h2>
+            Armá tu equipo.
+        </h2>
+
+        <p class="equipo-bajada">
+            Elegí tres personajes y descubrí qué misión
+            les espera en Zootopia.
+        </p>
+
+    </div>
+
+
+    <!-- PERSONAJES PARA ELEGIR -->
+
+    <div class="equipo-personajes">
+
+        <button
+            class="equipo-personaje"
+            type="button"
+            data-personaje="Judy"
+            data-imagen="imagenes/judy-zootopia .png"
+        >
+            <div class="equipo-personaje-imagen">
+                <img
+                    src="imagenes/judy-zootopia .png"
+                    alt="Judy Hopps"
+                >
+            </div>
+
+            <span>JUDY</span>
+        </button>
+
+
+        <button
+            class="equipo-personaje"
+            type="button"
+            data-personaje="Nick"
+            data-imagen="imagenes/nick-zootopia .png"
+        >
+            <div class="equipo-personaje-imagen">
+                <img
+                    src="imagenes/nick-zootopia .png"
+                    alt="Nick Wilde"
+                >
+            </div>
+
+            <span>NICK</span>
+        </button>
+
+
+        <button
+            class="equipo-personaje"
+            type="button"
+            data-personaje="Flash"
+            data-imagen="imagenes/flash-zootopia .png"
+        >
+            <div class="equipo-personaje-imagen">
+                <img
+                    src="imagenes/flash-zootopia .png"
+                    alt="Flash"
+                >
+            </div>
+
+            <span>FLASH</span>
+        </button>
+
+
+        <button
+            class="equipo-personaje"
+            type="button"
+            data-personaje="Bogo"
+            data-imagen="imagenes/chief-zootopia.png"
+        >
+            <div class="equipo-personaje-imagen">
+                <img
+                    src="imagenes/chief-zootopia.png"
+                    alt="Chief Bogo"
+                >
+            </div>
+
+            <span>BOGO</span>
+        </button>
+
+
+        <button
+            class="equipo-personaje"
+            type="button"
+            data-personaje="Bellwether"
+            data-imagen="imagenes/bellwether.jpg"
+        >
+            <div class="equipo-personaje-imagen">
+                <img
+                    src="imagenes/bellwether.jpg"
+                    alt="Bellwether"
+                >
+            </div>
+
+            <span>BELLWETHER</span>
+        </button>
+
+
+        <button
+            class="equipo-personaje"
+            type="button"
+            data-personaje="Finnick"
+            data-imagen="imagenes/finnick-zootopia.png"
+        >
+            <div class="equipo-personaje-imagen">
+                <img
+                    src="imagenes/finnick-zootopia.png"
+                    alt="Finnick"
+                >
+            </div>
+
+            <span>FINNICK</span>
+        </button>
+
+
+        <button
+            class="equipo-personaje"
+            type="button"
+            data-personaje="Clawhauser"
+            data-imagen="imagenes/clawhauser-zootopia.png"
+        >
+            <div class="equipo-personaje-imagen">
+                <img
+                    src="imagenes/clawhauser-zootopia.png"
+                    alt="Clawhauser"
+                >
+            </div>
+
+            <span>CLAWHAUSER</span>
+        </button>
+
+    </div>
+
+
+    <!-- EQUIPO ELEGIDO -->
+
+    <div class="equipo-panel">
+
+        <div class="equipo-panel-superior">
+
+            <div>
+
+                <p class="equipo-panel-mini">
+                    TU EQUIPO
+                </p>
+
+                <h3>
+                    Elegí 3 personajes
+                </h3>
+
+            </div>
+
+            <span class="equipo-contador" id="equipoContador">
+                0 / 3
+            </span>
+
+        </div>
+
+
+        <div class="equipo-seleccionados">
+
+            <div class="equipo-slot">
+                <span>01</span>
+            </div>
+
+            <div class="equipo-slot">
+                <span>02</span>
+            </div>
+
+            <div class="equipo-slot">
+                <span>03</span>
+            </div>
+
+        </div>
+
+
+        <button
+            class="equipo-boton"
+            id="iniciarMision"
+            type="button"
+            disabled
+        >
+            INICIAR MISIÓN
+            <span>→</span>
+        </button>
+
+
+        <!-- RESULTADO -->
+
+        <div
+            class="equipo-resultado"
+            id="resultadoMision"
+        >
+
+            <p>
+                MISIÓN ASIGNADA
+            </p>
+
+            <h3 id="misionTitulo">
+                Operación pendiente
+            </h3>
+
+            <span id="misionTexto">
+                Primero necesitás completar tu equipo.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     CIERRE DE MISIÓN
+====================================================== -->
+
+<section class="personajes-final mision-final">
+
+    <div class="mision-final-luz luz-uno"></div>
+    <div class="mision-final-luz luz-dos"></div>
+
+    <div class="mision-final-contenido">
+
+        <p class="mision-final-mini">
+            MISIÓN EN CURSO
+        </p>
+
+        <h2>
+            Tu equipo está listo.<br>
+            La ciudad los espera.
+        </h2>
+
+        <p class="mision-final-texto">
+            Ya conocés a los personajes, armaste tu equipo
+            y recibiste una misión. Ahora es momento de recorrer
+            Zootopia y descubrir dónde empieza la aventura.
+        </p>
+
+        <a
+            href="subpaginas/distritos.html"
+            class="mision-final-boton"
+        >
+            IR A LOS DISTRITOS
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <div class="mision-final-ruta">
+
+        <div class="ruta-punto-final">
+            <span>01</span>
+            <p>Conociste al equipo</p>
+        </div>
+
+        <div class="ruta-linea-final"></div>
+
+        <div class="ruta-punto-final">
+            <span>02</span>
+            <p>Elegiste tu misión</p>
+        </div>
+
+        <div class="ruta-linea-final"></div>
+
+        <div class="ruta-punto-final activo">
+            <span>03</span>
+            <p>Explorá la ciudad</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-superior">
+
+            <div class="footer-marca">
+
+                <div class="footer-logo">
+                    ZOOTOPIA
+                </div>
+
+                <p>
+                    Una ciudad enorme.<br>
+                    Mucho por descubrir.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="subpaginas/historia.html">
+                    Historia
+                </a>
+
+                <a href="personajes.html">
+                    Personajes
+                </a>
+
+                <a href="subpaginas/distritos.html">
+                    Distritos
+                </a>
+
+                <a href="subpaginas/mundo.html">
+                    Mundo Zootopia
+                </a>
+
+                <a href="subpaginas/curiosidades.html">
+                    Curiosidades
+                </a>
+
+                <a href="subpaginas/registro.html">
+                    Registrarse
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-linea"></div>
+
+
+        <div class="footer-inferior">
+
+            <p>
+                Explorá la ciudad a tu manera.
+            </p>
+
+            <a
+                href="#inicio-personajes"
+                class="footer-arriba"
+            >
+                VOLVER ARRIBA ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+
+  <script src="js/personajes.js?v=100"></script>
+
+</body>
+
+</html>
