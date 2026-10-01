@@ -3,10 +3,6 @@ document.addEventListener(
   function () {
 
 
-    /* =====================================================
-       DATOS DE LOS DISTRITOS
-    ====================================================== */
-
     const datosDistritos = [
 
       {
@@ -87,21 +83,11 @@ document.addEventListener(
     ];
 
 
-
-    /* =====================================================
-       TARJETAS DE DISTRITOS
-    ====================================================== */
-
     const botonesDescubrir =
       document.querySelectorAll(
         ".distrito-frente"
       );
 
-
-
-    /* =====================================================
-       CREAR MODAL
-    ====================================================== */
 
     const modalDistrito =
       document.createElement(
@@ -195,12 +181,6 @@ document.addEventListener(
       modalDistrito
     );
 
-
-
-    /* =====================================================
-       ELEMENTOS MODAL
-    ====================================================== */
-
     const modalImagen =
       document.getElementById(
         "modalDistritoImagen"
@@ -248,11 +228,6 @@ document.addEventListener(
         ".distrito-modal-fondo"
       );
 
-
-
-    /* =====================================================
-       ABRIR MODAL
-    ====================================================== */
 
     function abrirDistrito(indice) {
 
@@ -305,11 +280,6 @@ document.addEventListener(
     }
 
 
-
-    /* =====================================================
-       CERRAR MODAL
-    ====================================================== */
-
     function cerrarDistrito() {
 
       modalDistrito.classList.remove(
@@ -323,11 +293,6 @@ document.addEventListener(
 
     }
 
-
-
-    /* =====================================================
-       EVENTOS TARJETAS
-    ====================================================== */
 
     botonesDescubrir.forEach(
       function (boton, indice) {
@@ -378,11 +343,6 @@ document.addEventListener(
     );
 
 
-
-    /* =====================================================
-       MAPA INTERACTIVO
-    ====================================================== */
-
     const mapaContenedor =
       document.getElementById(
         "mapaZootopiaContenedor"
@@ -430,10 +390,6 @@ document.addEventListener(
     };
 
 
-
-    /* =====================================================
-       ACTIVAR ZOOM
-    ====================================================== */
 
     function activarZona(
       boton
@@ -492,11 +448,6 @@ document.addEventListener(
     }
 
 
-
-    /* =====================================================
-       RESTAURAR MAPA
-    ====================================================== */
-
     function restaurarMapa() {
 
       if (!mapaImagen) {
@@ -523,12 +474,6 @@ document.addEventListener(
       );
 
     }
-
-
-
-    /* =====================================================
-       EVENTOS MAPA
-    ====================================================== */
 
     mapaHotspots.forEach(
       function (punto) {
@@ -581,12 +526,6 @@ document.addEventListener(
       );
 
     }
-
-
-
-    /* =====================================================
-       SCROLL SUAVE
-    ====================================================== */
 
     const enlacesInternos =
       document.querySelectorAll(
