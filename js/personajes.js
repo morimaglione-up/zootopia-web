@@ -1,7 +1,3 @@
-/* =========================================================
-   PERSONAJES
-========================================================= */
-
 const personajes = [
 
   {
@@ -84,10 +80,6 @@ const personajes = [
 ];
 
 
-/* =========================================================
-   ELEMENTOS DEL CARRUSEL
-========================================================= */
-
 const imagen = document.getElementById("personajeImagen");
 const numero = document.getElementById("personajeNumero");
 const tipo = document.getElementById("personajeTipo");
@@ -116,10 +108,6 @@ const tarjeta =
 let personajeActual = 0;
 
 
-/* =========================================================
-   MOSTRAR PERSONAJE
-========================================================= */
-
 function mostrarPersonaje(indice) {
 
   const personaje = personajes[indice];
@@ -137,14 +125,8 @@ function mostrarPersonaje(indice) {
     frase.textContent = personaje.frase;
     descripcion.textContent = personaje.descripcion;
 
-
-    /* LIMPIAR ETIQUETAS */
-
     etiquetas.innerHTML = "";
-
-
-    /* CREAR ETIQUETAS */
-
+     
     personaje.etiquetas.forEach(
       function (etiqueta) {
 
@@ -160,7 +142,6 @@ function mostrarPersonaje(indice) {
     );
 
 
-    /* SACAR ACTIVO */
 
     puntos.forEach(
       function (punto) {
@@ -171,7 +152,6 @@ function mostrarPersonaje(indice) {
     );
 
 
-    /* ACTIVAR PUNTO */
 
     if (puntos[indice]) {
 
@@ -191,9 +171,6 @@ function mostrarPersonaje(indice) {
 }
 
 
-/* =========================================================
-   SIGUIENTE
-========================================================= */
 
 function siguientePersonaje() {
 
@@ -215,9 +192,6 @@ function siguientePersonaje() {
 }
 
 
-/* =========================================================
-   ANTERIOR
-========================================================= */
 
 function anteriorPersonaje() {
 
@@ -237,9 +211,6 @@ function anteriorPersonaje() {
 }
 
 
-/* =========================================================
-   EVENTOS FLECHAS
-========================================================= */
 
 if (botonSiguiente) {
 
@@ -261,9 +232,6 @@ if (botonAnterior) {
 }
 
 
-/* =========================================================
-   EVENTOS PUNTOS
-========================================================= */
 
 puntos.forEach(
   function (punto, indice) {
@@ -285,10 +253,6 @@ puntos.forEach(
   }
 );
 
-
-/* =========================================================
-   TECLADO
-========================================================= */
 
 document.addEventListener(
   "keydown",
@@ -316,19 +280,12 @@ document.addEventListener(
 );
 
 
-/* =========================================================
-   INICIO CARRUSEL
-========================================================= */
 
 mostrarPersonaje(
   personajeActual
 );
 
 
-
-/* =========================================================
-   ARMÁ TU EQUIPO
-========================================================= */
 
 const botonesEquipo =
   document.querySelectorAll(
@@ -366,21 +323,12 @@ const textoMision =
   );
 
 
-/* =========================================================
-   EQUIPO SELECCIONADO
-========================================================= */
-
 let equipoSeleccionado = [];
 
-
-/* =========================================================
-   ACTUALIZAR EQUIPO
-========================================================= */
 
 function actualizarEquipo() {
 
 
-  /* CONTADOR */
 
   if (contadorEquipo) {
 
@@ -391,7 +339,6 @@ function actualizarEquipo() {
   }
 
 
-  /* MARCAR PERSONAJES */
 
   botonesEquipo.forEach(
     function (boton) {
@@ -432,7 +379,6 @@ function actualizarEquipo() {
   );
 
 
-  /* LIMPIAR SLOTS */
 
   slotsEquipo.forEach(
     function (slot, indice) {
@@ -450,7 +396,6 @@ function actualizarEquipo() {
   );
 
 
-  /* COLOCAR PERSONAJES ELEGIDOS */
 
   equipoSeleccionado.forEach(
     function (personaje, indice) {
@@ -470,8 +415,6 @@ function actualizarEquipo() {
       slot.innerHTML = "";
 
 
-      /* FOTO */
-
       const foto =
         document.createElement(
           "img"
@@ -486,9 +429,6 @@ function actualizarEquipo() {
       slot.appendChild(
         foto
       );
-
-
-      /* INFORMACIÓN */
 
       const info =
         document.createElement(
@@ -522,18 +462,12 @@ function actualizarEquipo() {
     }
   );
 
-
-  /* ACTIVAR BOTÓN DE MISIÓN */
-
   if (botonMision) {
 
     botonMision.disabled =
       equipoSeleccionado.length !== 3;
 
   }
-
-
-  /* OCULTAR RESULTADO SI CAMBIA EL EQUIPO */
 
   if (resultadoMision) {
 
@@ -545,10 +479,6 @@ function actualizarEquipo() {
 
 }
 
-
-/* =========================================================
-   SELECCIONAR / DESELECCIONAR PERSONAJE
-========================================================= */
 
 botonesEquipo.forEach(
   function (boton) {
@@ -576,10 +506,6 @@ botonesEquipo.forEach(
             }
           );
 
-
-        /* SI YA ESTÁ ELEGIDO,
-           LO SACAMOS */
-
         if (
           indiceExistente !== -1
         ) {
@@ -595,10 +521,6 @@ botonesEquipo.forEach(
 
         }
 
-
-        /* SI YA HAY 3,
-           NO AGREGAMOS MÁS */
-
         if (
           equipoSeleccionado.length >= 3
         ) {
@@ -606,9 +528,6 @@ botonesEquipo.forEach(
           return;
 
         }
-
-
-        /* AGREGAR PERSONAJE */
 
         equipoSeleccionado.push({
 
@@ -628,11 +547,6 @@ botonesEquipo.forEach(
 
   }
 );
-
-
-/* =========================================================
-   MISIONES
-========================================================= */
 
 const misiones = [
 
@@ -687,10 +601,6 @@ const misiones = [
 ];
 
 
-/* =========================================================
-   INICIAR MISIÓN
-========================================================= */
-
 if (botonMision) {
 
   botonMision.addEventListener(
@@ -721,8 +631,6 @@ if (botonMision) {
         ];
 
 
-      /* NOMBRES DEL EQUIPO */
-
       const nombresEquipo =
         equipoSeleccionado
           .map(
@@ -734,8 +642,6 @@ if (botonMision) {
           )
           .join(", ");
 
-
-      /* MOSTRAR RESULTADO */
 
       tituloMision.textContent =
         mision.titulo;
@@ -749,8 +655,6 @@ if (botonMision) {
         "visible"
       );
 
-
-      /* BAJAR SUAVEMENTE AL RESULTADO */
 
       setTimeout(
         function () {
@@ -774,9 +678,5 @@ if (botonMision) {
 
 }
 
-
-/* =========================================================
-   INICIO EQUIPO
-========================================================= */
 
 actualizarEquipo();
