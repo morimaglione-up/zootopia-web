@@ -5,11 +5,6 @@ require_once "../conexion.php";
 $nombre = $_POST["nombre"] ?? "Visitante";
 $especie = $_POST["especie"] ?? "otro";
 
-
-/* =========================================================
-   GUARDAR USUARIO EN LA BASE DE DATOS
-========================================================= */
-
 $consulta = "INSERT INTO usuarios (nombre, especie) VALUES (?, ?)";
 
 $stmt = mysqli_prepare($conexion, $consulta);
@@ -22,11 +17,6 @@ mysqli_stmt_bind_param(
 );
 
 mysqli_stmt_execute($stmt);
-
-
-/* =========================================================
-   EMOJI SEGÚN ESPECIE
-========================================================= */
 
 $emoji = "🐾";
 
