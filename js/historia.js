@@ -1,12 +1,7 @@
 document.addEventListener(
   "DOMContentLoaded",
   function () {
-
-
-    /* =====================================================
-       TARJETAS DE HISTORIA
-    ====================================================== */
-
+    
     const tarjetas =
       document.querySelectorAll(
         ".story-card"
@@ -29,9 +24,6 @@ document.addEventListener(
           );
 
 
-        /* =================================================
-           GIRAR PARA VER LA HISTORIA
-        ================================================= */
 
         if (frente) {
 
@@ -54,9 +46,6 @@ document.addEventListener(
         }
 
 
-        /* =================================================
-           VOLVER A LA IMAGEN
-        ================================================= */
 
         if (volver) {
 
@@ -81,11 +70,6 @@ document.addEventListener(
       }
     );
 
-
-
-    /* =====================================================
-       SECUENCIA CINEMATOGRÁFICA
-    ====================================================== */
 
     const fotogramas =
       document.querySelectorAll(
@@ -158,11 +142,6 @@ document.addEventListener(
       }
     );
 
-
-
-    /* =====================================================
-       SCROLL SUAVE
-    ====================================================== */
 
     const enlacesInternos =
       document.querySelectorAll(
