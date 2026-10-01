@@ -1,6 +1,3 @@
-/* =========================================================
-   TARJETAS DE CURIOSIDADES
-========================================================= */
 
 const tarjetasCuriosidad =
   document.querySelectorAll(".curiosidad-card");
@@ -47,11 +44,6 @@ tarjetasCuriosidad.forEach(function(tarjeta) {
 
 });
 
-
-
-/* =========================================================
-   VERDADERO O FALSO
-========================================================= */
 
 const botonesRespuesta =
   document.querySelectorAll(
