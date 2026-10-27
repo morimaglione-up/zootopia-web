@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -16,10 +17,68 @@
     >
 
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/registro.css?v=2">
+
 </head>
 
 <body class="pagina-registro">
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="navbar registro-navbar">
+
+        <a href="inicio.html" class="logo">
+            ZOOTOPIA
+        </a>
+
+        <nav>
+
+            <a href="inicio.html">
+                Inicio
+            </a>
+
+            <a href="historia.html">
+                Historia
+            </a>
+
+            <a href="personajes.html">
+                Personajes
+            </a>
+
+            <a href="distritos.html">
+                Distritos
+            </a>
+
+            <a href="mundo.html">
+                Mundo Zootopia
+            </a>
+
+            <a href="curiosidades.html">
+                Curiosidades
+            </a>
+
+            <a href="galeria.html">
+                Galería
+            </a>
+
+            <a href="registro.html">
+                Registrarse
+            </a>
+
+        </nav>
+
+        <div class="search">
+            ⌕
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         REGISTRO
+    ====================================================== -->
 
     <section class="registro">
 
@@ -54,6 +113,7 @@
                         id="nombre"
                         name="nombre"
                         placeholder="Escribí tu nombre"
+                        maxlength="100"
                         required
                     >
 
@@ -95,6 +155,44 @@
 
                 </div>
 
+                <div class="registro-campo">
+
+                    <label for="usuario">
+                        NOMBRE DE USUARIO
+                    </label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Elegí tu nombre de usuario"
+                        maxlength="100"
+                        minlength="3"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+                <div class="registro-campo">
+
+                    <label for="contrasena">
+                        CONTRASEÑA
+                    </label>
+
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        placeholder="Creá una contraseña"
+                        minlength="8"
+                        maxlength="72"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
                 <button type="submit" class="registro-boton">
                     CREAR MI PERFIL
                     <span>→</span>
@@ -129,6 +227,82 @@
         </div>
 
     </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-superior">
+
+            <div class="footer-marca">
+
+                <div class="footer-logo">
+                    ZOOTOPIA
+                </div>
+
+                <p>
+                    Una ciudad enorme.<br>
+                    Mucho por descubrir.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="inicio.html">
+                    Inicio
+                </a>
+
+                <a href="historia.html">
+                    Historia
+                </a>
+
+                <a href="personajes.html">
+                    Personajes
+                </a>
+
+                <a href="distritos.html">
+                    Distritos
+                </a>
+
+                <a href="mundo.html">
+                    Mundo Zootopia
+                </a>
+
+                <a href="curiosidades.html">
+                    Curiosidades
+                </a>
+
+                <a href="galeria.html">
+                    Galería
+                </a>
+
+                <a href="registro.html">
+                    Registrarse
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-linea"></div>
+
+        <div class="footer-inferior">
+
+            <p>
+                Explorá la ciudad a tu manera.
+            </p>
+
+            <a href="#" class="footer-arriba">
+                VOLVER ARRIBA ↑
+            </a>
+
+        </div>
+
+    </footer>
 
 </body>
 
