@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zootopia | Archivo visual</title>
+
+    <!-- TIPOGRAFÍAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Righteous&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../css/estilos.css?v=6">
+    <link rel="stylesheet" href="../css/galeria-collage.css?v=1">
+
+    <!-- FOTOGRAFÍAS DE PRUEBA EN BLANCO Y NEGRO -->
+    <style>
+        .collage-foto img {
+            filter: grayscale(100%);
+        }
+
+        .collage-foto:hover img {
+            filter: grayscale(100%);
+            transform: scale(1.07);
+        }
+    </style>
+
+</head>
+
+<body class="pagina-collage">
+
+    <!-- NAVEGACIÓN -->
+
+    <header class="navbar collage-navbar">
+
+        <a href="../inicio.html" class="logo">
+            ZOOTOPIA
+        </a>
+
+        <nav>
+            <a href="../inicio.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="distritos.html">Distritos</a>
+            <a href="mundo.html">Mundo Zootopia</a>
+            <a href="curiosidades.html">Curiosidades</a>
+            <a href="galeria-collage.html" class="nav-activo">Galería</a>
+            <a href="registro.html">Registrarse</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ENCABEZADO BREVE -->
+
+    <main>
+
+        <section class="collage-intro">
+
+            <div>
+                <p class="collage-etiqueta">
+                    ZOOTOPIA / ARCHIVO VISUAL
+                </p>
+
+                <h1>
+                    Fuera de<br>
+                    <span>escena.</span>
+                </h1>
+            </div>
+
+            <div class="collage-intro-derecha">
+
+                <span>01 — 08</span>
+
+                <p>
+                    Una mirada al proceso creativo
+                    detrás del universo de Zootopia.
+                </p>
+
+                <a href="#archivo">
+                    EXPLORAR ARCHIVO ↓
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLLAGE DE FOTOGRAFÍAS -->
+
+        <section class="collage-seccion" id="archivo">
+
+            <div class="collage-superior">
+
+                <span>ARCHIVO / 001</span>
+
+                <span>
+                    SELECCIONÁ UNA IMAGEN PARA AMPLIARLA ↗
+                </span>
+
+            </div>
+
+            <div class="collage-grid">
+
+                <!-- FOTO 01 -->
+                <button class="collage-foto foto-01" type="button">
+
+                    <img
+                        src="https://picsum.photos/id/1018/1200/900?grayscale"
+                        alt="Fotografía de prueba 01"
+                    >
+
+                    <span>01 / ARTE CONCEPTUAL</span>
+
+                </button>
+
+
+                <!-- FOTO 02 -->
+                <button class="collage-foto foto-02" type="button">
+
+                    <img
+                        src="https://picsum.photos/id/1025/900/1100?grayscale"
+                        alt="Fotografía de prueba 02"
+                    >
+
+                    <span>02 / BOCETOS</span>
+
+                </button>
+
+
+                <!-- FOTO 03 -->
+                <button class="collage-foto foto-03" type="button">
+
+                    <img
+                        src="https://picsum.photos/id/1036/900/1100?grayscale"
+                        alt="Fotografía de prueba 03"
+                    >
+
+                    <span>03 / EXPLORACIÓN VISUAL</span>
+
+                </button>
+
+
+                <!-- FOTO 04 -->
+                <button class="collage-foto foto-04" type="button">
+
+                    <img
+                        src="https://picsum.photos/id/1040/900/1100?grayscale"
+                        alt="Fotografía de prueba 04"
+                    >
+
+                    <span>04 / PROCESO CREATIVO</span>
+
+                </button>
+
+
+                <!-- FOTO 05 -->
+                <button class="collage-foto foto-05" type="button">
+
+                    <img
+                        src="https://picsum.photos/id/1043/1200/900?grayscale"
+                        alt="Fotografía de prueba 05"
+                    >
+
+                    <span>05 / ILUSTRACIONES</span>
+
+                </button>
+
+
+                <!-- FOTO 06 -->
+                <button class="collage-foto foto-06" type="button">
+
+                    <img
+                        src="https://picsum.photos/id/1050/900/1100?grayscale"
+                        alt="Fotografía de prueba 06"
+                    >
+
+                    <span>06 / ESCENARIOS</span>
+
+                </button>
+
+
+                <!-- FOTO 07 -->
+                <button class="collage-foto foto-07" type="button">
+
+                    <img
+                        src="https://picsum.photos/id/1067/900/1100?grayscale"
+                        alt="Fotografía de prueba 07"
+                    >
+
+                    <span>07 / COLOR Y ATMÓSFERA</span>
+
+                </button>
+
+
+                <!-- FOTO 08 -->
+                <button class="collage-foto foto-08" type="button">
+
+                    <img
+                        src="https://picsum.photos/id/1074/1200/900?grayscale"
+                        alt="Fotografía de prueba 08"
+                    >
+
+                    <span>08 / DETRÁS DE ESCENA</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- VISOR DE IMÁGENES -->
+
+    <div
+        class="collage-modal"
+        id="collageModal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Imagen ampliada"
+        hidden
+    >
+
+        <button
+            class="collage-cerrar"
+            id="collageCerrar"
+            type="button"
+            aria-label="Cerrar imagen"
+        >
+            ✕
+        </button>
+
+        <button
+            class="collage-flecha"
+            id="collageAnterior"
+            type="button"
+            aria-label="Imagen anterior"
+        >
+            ←
+        </button>
+
+        <div class="collage-modal-centro">
+
+            <img
+                id="collageImagenGrande"
+                src=""
+                alt=""
+            >
+
+            <p id="collageContador">
+                01 / 08
+            </p>
+
+        </div>
+
+        <button
+            class="collage-flecha"
+            id="collageSiguiente"
+            type="button"
+            aria-label="Imagen siguiente"
+        >
+            →
+        </button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-superior">
+
+            <div class="footer-marca">
+
+                <div class="footer-logo">
+                    ZOOTOPIA
+                </div>
+
+                <p>
+                    Una ciudad enorme.<br>
+                    Mucho por descubrir.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="../inicio.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="distritos.html">Distritos</a>
+                <a href="mundo.html">Mundo Zootopia</a>
+                <a href="curiosidades.html">Curiosidades</a>
+                <a href="galeria-collage.html">Galería</a>
+                <a href="registro.html">Registrarse</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-linea"></div>
+
+        <div class="footer-inferior">
+
+            <p>Explorá la ciudad a tu manera.</p>
+
+            <a href="#" class="footer-arriba">
+                VOLVER ARRIBA ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/galeria-collage.js?v=1"></script>
+
+</body>
+</html>

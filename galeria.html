@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zootopia | Galería</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Righteous&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/galeria.css?v=6">
+
+</head>
+
+<body class="pagina-collage">
+
+    <!-- PORTADA + HEADER -->
+    <section class="galeria-hero" id="inicio-galeria">
+
+        <header class="navbar collage-navbar">
+
+            <a href="inicio.html" class="logo">
+                ZOOTOPIA
+            </a>
+
+            <nav>
+                <a href="inicio.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="distritos.html">Distritos</a>
+                <a href="mundo.html">Mundo Zootopia</a>
+                <a href="curiosidades.html">Curiosidades</a>
+                <a href="galeria.html" class="nav-activo">Galería</a>
+                <a href="registro.html">Registrarse</a>
+            </nav>
+
+            <div class="search">⌕</div>
+
+        </header>
+
+        <div class="galeria-hero-contenido">
+
+            <p class="galeria-hero-mini">
+                ZOOTOPIA / ARCHIVO VISUAL
+            </p>
+
+            <h1>GALERÍA</h1>
+
+            <p class="galeria-hero-texto">
+                Una mirada al arte y al proceso creativo
+                detrás del universo de Zootopia.
+            </p>
+
+            <a href="#archivo" class="galeria-hero-boton">
+                EXPLORAR GALERÍA
+                <span>↓</span>
+            </a>
+
+        </div>
+
+    </section>
+
+    <main>
+
+        <!-- COLLAGE INTERACTIVO -->
+        <section class="collage-seccion" id="archivo">
+
+            <div class="collage-superior">
+                <span>ARCHIVO / 001</span>
+
+                <span>
+                    SELECCIONÁ UNA IMAGEN PARA AMPLIARLA ↗
+                </span>
+            </div>
+
+            <div class="collage-grid">
+
+                <!-- FOTO 01 -->
+                <button class="collage-foto foto-01" type="button">
+                    <img
+                        src="../imagenes/ciudad-zootopia.png"
+                        alt="Vista panorámica de la ciudad de Zootopia"
+                        loading="lazy"
+                    >
+                    <span>01 / LA CIUDAD</span>
+                </button>
+
+                <!-- FOTO 02 -->
+                <button class="collage-foto foto-02" type="button">
+                    <img
+                        src="../imagenes/galeria-judy.jpeg"
+                        alt="Bocetos de diseño de Judy Hopps"
+                        loading="lazy"
+                    >
+                    <span>02 / DISEÑO DE JUDY</span>
+                </button>
+
+                <!-- FOTO 03 -->
+                <button class="collage-foto foto-03" type="button">
+                    <img
+                        src="../imagenes/galeria-expresiones.jpg"
+                        alt="Estudios de expresiones de personajes de Zootopia"
+                        loading="lazy"
+                    >
+                    <span>03 / EXPRESIONES</span>
+                </button>
+
+                <!-- FOTO 04 -->
+                <button class="collage-foto foto-04" type="button">
+                    <img
+                        src="../imagenes/galeria-tundratown.jpeg"
+                        alt="Arte conceptual del distrito Tundra Town"
+                        loading="lazy"
+                    >
+                    <span>04 / TUNDRA TOWN</span>
+                </button>
+
+                <!-- FOTO 05 -->
+                <button class="collage-foto foto-05" type="button">
+                    <img
+                        src="../imagenes/galeria-bigdonut.jpeg"
+                        alt="Diseño conceptual de Big Donut en Zootopia"
+                        loading="lazy"
+                    >
+                    <span>05 / PROCESO CREATIVO</span>
+                </button>
+
+                <!-- FOTO 06 -->
+                <button class="collage-foto foto-06" type="button">
+                    <img
+                        src="../imagenes/galeria-estacion.jpeg"
+                        alt="Arte conceptual de la estación central de Zootopia"
+                        loading="lazy"
+                    >
+                    <span>06 / ESTACIÓN CENTRAL</span>
+                </button>
+
+                <!-- FOTO 07 -->
+                <button class="collage-foto foto-07" type="button">
+                    <img
+                        src="../imagenes/galeria-sahara.jpeg"
+                        alt="Diseño del distrito Sahara Square"
+                        loading="lazy"
+                    >
+                    <span>07 / SAHARA SQUARE</span>
+                </button>
+
+                <!-- FOTO 08 -->
+                <button class="collage-foto foto-08" type="button">
+                    <img
+                        src="../imagenes/galeria-plaza.jpeg"
+                        alt="Vista de la plaza central de Zootopia"
+                        loading="lazy"
+                    >
+                    <span>08 / ZOOTOPIA EN DETALLE</span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- VISOR INTERACTIVO -->
+    <div
+        class="collage-modal"
+        id="collageModal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Imagen ampliada"
+        hidden
+    >
+
+        <button
+            class="collage-cerrar"
+            id="collageCerrar"
+            type="button"
+            aria-label="Cerrar imagen"
+        >
+            ✕
+        </button>
+
+        <button
+            class="collage-flecha"
+            id="collageAnterior"
+            type="button"
+            aria-label="Imagen anterior"
+        >
+            ←
+        </button>
+
+        <div class="collage-modal-centro">
+
+            <img
+                id="collageImagenGrande"
+                src=""
+                alt=""
+            >
+
+            <p id="collageContador">
+                01 / 08
+            </p>
+
+        </div>
+
+        <button
+            class="collage-flecha"
+            id="collageSiguiente"
+            type="button"
+            aria-label="Imagen siguiente"
+        >
+            →
+        </button>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-superior">
+
+            <div class="footer-marca">
+                <div class="footer-logo">ZOOTOPIA</div>
+
+                <p>
+                    Una ciudad enorme.<br>
+                    Mucho por descubrir.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="inicio.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="distritos.html">Distritos</a>
+                <a href="mundo.html">Mundo Zootopia</a>
+                <a href="curiosidades.html">Curiosidades</a>
+                <a href="galeria.html">Galería</a>
+                <a href="registro.html">Registrarse</a>
+            </div>
+
+        </div>
+
+        <div class="footer-linea"></div>
+
+        <div class="footer-inferior">
+            <p>Explorá la ciudad a tu manera.</p>
+
+            <a href="#inicio-galeria" class="footer-arriba">
+                VOLVER ARRIBA ↑
+            </a>
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/galeria.js?v=1"></script>
+
+</body>
+</html>

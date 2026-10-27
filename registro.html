@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zootopia | Crear perfil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Righteous&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/registro.css?v=2">
+
+</head>
+
+<body class="pagina-registro">
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="navbar registro-navbar">
+
+        <a href="inicio.html" class="logo">
+            ZOOTOPIA
+        </a>
+
+        <nav>
+
+            <a href="inicio.html">
+                Inicio
+            </a>
+
+            <a href="historia.html">
+                Historia
+            </a>
+
+            <a href="personajes.html">
+                Personajes
+            </a>
+
+            <a href="distritos.html">
+                Distritos
+            </a>
+
+            <a href="mundo.html">
+                Mundo Zootopia
+            </a>
+
+            <a href="curiosidades.html">
+                Curiosidades
+            </a>
+
+            <a href="galeria.html">
+                Galería
+            </a>
+
+            <a href="registro.html">
+                Registrarse
+            </a>
+
+        </nav>
+
+        <div class="search">
+            ⌕
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         REGISTRO
+    ====================================================== -->
+
+    <section class="registro">
+
+        <div class="registro-circulo circulo-uno"></div>
+        <div class="registro-circulo circulo-dos"></div>
+
+        <div class="registro-contenido">
+
+            <p class="registro-mini">
+                ÚLTIMA PARADA
+            </p>
+
+            <h1>
+                Creá tu perfil<br>
+                en Zootopia.
+            </h1>
+
+            <p class="registro-bajada">
+                Después de recorrer la ciudad, elegí cómo querés formar parte de este mundo.
+            </p>
+
+            <form action="bienvenida.php" method="post" class="registro-form">
+
+                <div class="registro-campo">
+
+                    <label for="nombre">
+                        TU NOMBRE
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribí tu nombre"
+                        maxlength="100"
+                        required
+                    >
+
+                </div>
+
+                <div class="registro-campo">
+
+                    <label for="especie">
+                        ELEGÍ TU ESPECIE
+                    </label>
+
+                    <select
+                        id="especie"
+                        name="especie"
+                        required
+                    >
+
+                        <option value="">
+                            Seleccioná una opción
+                        </option>
+
+                        <option value="conejo">
+                            Conejo
+                        </option>
+
+                        <option value="zorro">
+                            Zorro
+                        </option>
+
+                        <option value="oso">
+                            Oso
+                        </option>
+
+                        <option value="ciervo">
+                            Ciervo
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="registro-campo">
+
+                    <label for="usuario">
+                        NOMBRE DE USUARIO
+                    </label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Elegí tu nombre de usuario"
+                        maxlength="100"
+                        minlength="3"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+                <div class="registro-campo">
+
+                    <label for="contrasena">
+                        CONTRASEÑA
+                    </label>
+
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        placeholder="Creá una contraseña"
+                        minlength="8"
+                        maxlength="72"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit" class="registro-boton">
+                    CREAR MI PERFIL
+                    <span>→</span>
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="registro-lateral">
+
+            <p>
+                TU RECORRIDO
+            </p>
+
+            <div class="registro-pasos">
+
+                <span>01</span>
+                <span>02</span>
+                <span>03</span>
+                <span>04</span>
+                <span>05</span>
+                <span>06</span>
+
+            </div>
+
+            <strong>
+                Ya conociste la ciudad.<br>
+                Ahora elegí quién querés ser dentro de ella.
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-superior">
+
+            <div class="footer-marca">
+
+                <div class="footer-logo">
+                    ZOOTOPIA
+                </div>
+
+                <p>
+                    Una ciudad enorme.<br>
+                    Mucho por descubrir.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="inicio.html">
+                    Inicio
+                </a>
+
+                <a href="historia.html">
+                    Historia
+                </a>
+
+                <a href="personajes.html">
+                    Personajes
+                </a>
+
+                <a href="distritos.html">
+                    Distritos
+                </a>
+
+                <a href="mundo.html">
+                    Mundo Zootopia
+                </a>
+
+                <a href="curiosidades.html">
+                    Curiosidades
+                </a>
+
+                <a href="galeria.html">
+                    Galería
+                </a>
+
+                <a href="registro.html">
+                    Registrarse
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-linea"></div>
+
+        <div class="footer-inferior">
+
+            <p>
+                Explorá la ciudad a tu manera.
+            </p>
+
+            <a href="#" class="footer-arriba">
+                VOLVER ARRIBA ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
