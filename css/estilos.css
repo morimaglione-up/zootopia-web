@@ -57,62 +57,68 @@ body {
 ========================================================= */
 
 .navbar {
-  position: relative;
-  z-index: 10;
+    position: relative;
+    z-index: 10;
 
-  width: 100%;
-  height: 82px;
+    width: 100%;
+    height: 82px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  padding: 0 5%;
+    gap: 18px;
+    padding: 0 3%;
 
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .logo {
-  font-family: "Righteous", sans-serif;
+    flex-shrink: 0;
 
-  font-size: 24px;
-  font-weight: 400;
-
-  letter-spacing: -1px;
+    font-family: "Righteous", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1px;
 }
 
 .navbar nav {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  gap: 28px;
+    flex: 1;
+    min-width: 0;
+
+    gap: clamp(10px, 1.5vw, 22px);
 }
 
 .navbar nav a {
-  color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 
-  text-decoration: none;
+    text-decoration: none;
 
-  font-size: 14px;
-  font-weight: 500;
+    font-size: clamp(11px, 0.95vw, 14px);
+    font-weight: 500;
 
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+    white-space: nowrap;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
 }
 
 .navbar nav a:hover {
-  opacity: 1;
-
-  transform: translateY(-2px);
+    opacity: 1;
+    transform: translateY(-2px);
 }
 
 .search {
-  color: #ffffff;
+    flex-shrink: 0;
 
-  font-size: 25px;
-
-  cursor: pointer;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 

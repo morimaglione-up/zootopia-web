@@ -1,0 +1,289 @@
+
+/* =========================================================
+   PÁGINA PERFIL
+========================================================= */
+
+.pagina-perfil {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #f7f3ea;
+    color: #17213c;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pagina-perfil .perfil-navbar {
+    position: relative;
+    z-index: 20;
+
+    width: 100%;
+
+    background-color: #f7f3ea;
+}
+
+.pagina-perfil .perfil-navbar .logo {
+    color: #17213c;
+    text-decoration: none;
+}
+
+.pagina-perfil .perfil-navbar nav a {
+    color: #17213c;
+    text-decoration: none;
+}
+
+.pagina-perfil .perfil-navbar nav a:hover {
+    color: #52617d;
+}
+
+.pagina-perfil .perfil-navbar .search {
+    color: #17213c;
+}
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+========================================================= */
+
+.perfil-pagina {
+    min-height: calc(100vh - 82px);
+
+    padding: 65px 8% 100px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.perfil-contenedor {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   ENCABEZADO DEL PERFIL
+========================================================= */
+
+.perfil-etiqueta {
+    color: #7083a6;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.perfil-titulo {
+    font-size: clamp(48px, 6vw, 86px);
+
+    line-height: 1;
+    letter-spacing: -4px;
+
+    margin: 0 0 22px;
+}
+
+.perfil-descripcion {
+    font-size: 15px;
+
+    color: #646b77;
+
+    line-height: 1.7;
+
+    margin-bottom: 45px;
+}
+
+/* =========================================================
+   TARJETA DE PERFIL
+========================================================= */
+
+.perfil-tarjeta {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 20px 60px rgba(23, 33, 60, 0.08);
+}
+
+/* =========================================================
+   LADO VISUAL
+========================================================= */
+
+.perfil-visual {
+    position: relative;
+
+    min-height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #91c7cf;
+}
+
+.perfil-visual::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.perfil-emoji {
+    position: relative;
+    z-index: 1;
+
+    font-size: 145px;
+}
+
+/* =========================================================
+   DATOS DEL USUARIO
+========================================================= */
+
+.perfil-datos {
+    padding: 55px;
+}
+
+.perfil-datos h2 {
+    font-size: clamp(30px, 4vw, 48px);
+
+    letter-spacing: -2px;
+
+    margin: 0 0 12px;
+}
+
+.perfil-usuario {
+    font-size: 14px;
+
+    color: #7083a6;
+
+    margin-bottom: 35px;
+}
+
+.perfil-fila {
+    padding: 18px 0;
+
+    border-top: 1px solid #e8eaf0;
+}
+
+.perfil-fila span {
+    display: block;
+
+    color: #7083a6;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.perfil-fila strong {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.perfil-acciones {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.perfil-boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 24px;
+
+    border-radius: 100px;
+
+    background-color: #17213c;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.perfil-boton:hover {
+    transform: translateY(-3px);
+    background-color: #263659;
+}
+
+.perfil-boton.secundario {
+    background-color: #f7f3ea;
+    color: #17213c;
+}
+
+.perfil-boton.secundario:hover {
+    background-color: #e9e5dc;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.pagina-perfil .footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .perfil-pagina {
+        min-height: calc(100vh - 75px);
+        padding: 45px 6% 80px;
+    }
+
+    .perfil-tarjeta {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil-visual {
+        min-height: 250px;
+    }
+
+    .perfil-emoji {
+        font-size: 105px;
+    }
+
+    .perfil-datos {
+        padding: 30px;
+    }
+
+    .perfil-titulo {
+        letter-spacing: -2px;
+    }
+
+}

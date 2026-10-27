@@ -1,3 +1,4 @@
+
 /* =========================================================
    CONFIGURACIÓN
 ========================================================= */
@@ -11,6 +12,43 @@
   color: #17213c;
 
   font-family: "Montserrat", sans-serif;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pagina-registro .registro-navbar {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  z-index: 20;
+
+  background-color: #f7f3ea;
+}
+
+.pagina-registro .registro-navbar .logo {
+  color: #17213c;
+  text-decoration: none;
+}
+
+.pagina-registro .registro-navbar nav a {
+  color: #17213c;
+  text-decoration: none;
+}
+
+.pagina-registro .registro-navbar nav a:hover {
+  color: #52617d;
+}
+
+.pagina-registro .registro-navbar .search {
+  color: #17213c;
 }
 
 
@@ -292,6 +330,16 @@
   line-height: 1.2;
 
   letter-spacing: -1.2px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.pagina-registro .footer {
+  position: relative;
+  z-index: 2;
 }
 
 

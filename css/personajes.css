@@ -1691,3 +1691,162 @@
   }
 
 }
+
+/* =========================================================
+   BUSCADOR DE PERSONAJES
+========================================================= */
+
+.buscador-personajes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+}
+
+/* LUPA */
+
+.buscador-icono {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+
+  font-size: 27px;
+  font-family: "Montserrat", sans-serif;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.buscador-icono:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* FORMULARIO DESPLEGABLE */
+
+.buscador-formulario {
+  position: absolute;
+  top: calc(100% + 15px);
+  right: 0;
+
+  width: 340px;
+  max-width: calc(100vw - 32px);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px;
+
+  border: 1px solid rgba(23, 33, 60, 0.08);
+  border-radius: 18px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 18px 45px rgba(8, 25, 52, 0.2);
+}
+
+/* MANTENER OCULTO HASTA TOCAR LA LUPA */
+
+.buscador-formulario[hidden] {
+  display: none;
+}
+
+/* CAMPO DE TEXTO */
+
+.buscador-formulario input {
+  flex: 1;
+  min-width: 0;
+
+  padding: 12px 10px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+  color: #17213c;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.buscador-formulario input::placeholder {
+  color: #8b94a5;
+}
+
+.buscador-formulario input:focus-visible {
+  outline: 2px solid #91c7cf;
+  outline-offset: -2px;
+  border-radius: 8px;
+}
+
+/* BOTÓN BUSCAR */
+
+.buscador-formulario button {
+  flex-shrink: 0;
+
+  padding: 13px 16px;
+
+  border: none;
+  border-radius: 11px;
+
+  background-color: #17213c;
+  color: #ffffff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.buscador-formulario button:hover {
+  background-color: #315270;
+  transform: translateY(-1px);
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 650px) {
+
+  .buscador-icono {
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+
+  .buscador-formulario {
+    width: min(320px, calc(100vw - 32px));
+    right: 0;
+  }
+
+  .buscador-formulario input {
+    font-size: 11px;
+  }
+
+  .buscador-formulario button {
+    padding: 12px;
+    font-size: 9px;
+  }
+
+}

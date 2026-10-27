@@ -1,0 +1,116 @@
+
+/* =========================================================
+   PÁGINA LOGIN
+========================================================= */
+
+.pagina-login {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #f7f3ea;
+
+    color: #17213c;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pagina-login .login-navbar {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    z-index: 20;
+
+    background-color: #f7f3ea;
+}
+
+.pagina-login .login-navbar .logo {
+    color: #17213c;
+    text-decoration: none;
+}
+
+.pagina-login .login-navbar nav a {
+    color: #17213c;
+    text-decoration: none;
+}
+
+.pagina-login .login-navbar nav a:hover {
+    color: #52617d;
+}
+
+.pagina-login .login-navbar .search {
+    color: #17213c;
+}
+
+/* =========================================================
+   CONTENIDO
+========================================================= */
+
+.pagina-login .registro {
+    position: relative;
+}
+
+/* =========================================================
+   MENSAJE DE ERROR
+========================================================= */
+
+.login-error {
+    padding: 15px 18px;
+
+    border-radius: 14px;
+
+    background-color: #ffe8e3;
+
+    color: #a53b30;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   ENLACE DE REGISTRO
+========================================================= */
+
+.login-enlace {
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    color: #646b77;
+}
+
+.login-enlace a {
+    color: #17213c;
+
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.login-enlace a:hover {
+    color: #52617d;
+}
+
+/* =========================================================
+   LATERAL
+========================================================= */
+
+.login-lateral {
+    background-color: #08274d;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.pagina-login .footer {
+    position: relative;
+    z-index: 2;
+}
