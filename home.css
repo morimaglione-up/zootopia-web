@@ -1,0 +1,1534 @@
+/* =========================================================
+   HOME — CONFIGURACIÓN
+========================================================= */
+
+.pagina-home {
+  background-color: #f6f1e7;
+  color: #17213c;
+}
+
+
+/* =========================================================
+   TEST
+========================================================= */
+
+.home-test {
+  --mouse-x: 0px;
+  --mouse-y: 0px;
+
+  position: relative;
+
+  padding: 110px 7% 120px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5efe3 0%,
+      #eef4f1 58%,
+      #edf0f8 100%
+    );
+
+  color: #17213c;
+}
+
+
+.home-test-grid {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.05fr 0.95fr;
+
+  align-items: center;
+
+  gap: 8%;
+}
+
+
+.home-test .test-encabezado {
+  max-width: 720px;
+
+  margin-bottom: 34px;
+}
+
+
+.home-test .test-mini {
+  color: #75819a;
+}
+
+
+.home-test .test-encabezado h2 {
+  max-width: 660px;
+
+  margin-bottom: 18px;
+
+  font-size: clamp(44px, 4.5vw, 70px);
+
+  line-height: 0.98;
+
+  letter-spacing: -3.5px;
+
+  color: #17213c;
+}
+
+
+.home-test .test-bajada {
+  max-width: 560px;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #626a78;
+}
+
+
+.home-test .test-contenedor {
+  width: 100%;
+  max-width: 760px;
+
+  padding: 34px;
+
+  border: 1px solid rgba(23, 33, 60, 0.08);
+  border-radius: 28px;
+
+  background-color: rgba(255, 255, 255, 0.82);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 22px 70px rgba(33, 44, 72, 0.08);
+}
+
+
+.home-test .test-pregunta h3 {
+  font-size: 22px;
+}
+
+
+.home-test .test-opcion {
+  min-height: 60px;
+
+  border-color: rgba(23, 33, 60, 0.1);
+
+  background-color: #ffffff;
+}
+
+
+.home-test .test-opcion:hover {
+  background-color: #ee9b7b;
+
+  border-color: #ee9b7b;
+
+  color: #17213c;
+}
+
+
+/* =========================================================
+   TEST — DECORACIÓN DERECHA
+========================================================= */
+
+.test-universo {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  max-width: 570px;
+
+  margin-left: auto;
+
+  transform:
+    translate(
+      calc(var(--mouse-x) * 0.04),
+      calc(var(--mouse-y) * 0.04)
+    );
+
+  transition: transform 0.18s ease-out;
+}
+
+
+.universo-centro {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 245px;
+  height: 245px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background-color: #fff4bd;
+
+  text-align: center;
+
+  box-shadow:
+    0 25px 55px rgba(23, 33, 60, 0.1);
+}
+
+
+.universo-numero {
+  margin-bottom: 18px;
+
+  font-size: 44px;
+  font-weight: 500;
+
+  color: #17213c;
+}
+
+
+.universo-centro p {
+  margin-bottom: 8px;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #778097;
+}
+
+
+.universo-centro strong {
+  font-size: 17px;
+  line-height: 1.25;
+
+  letter-spacing: -0.5px;
+}
+
+
+.universo-orbita {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  border: 1px dashed rgba(23, 33, 60, 0.18);
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+.orbita-uno {
+  width: 370px;
+  height: 370px;
+
+  animation: orbita-giro 30s linear infinite;
+}
+
+
+.orbita-dos {
+  width: 510px;
+  height: 510px;
+
+  animation: orbita-giro 45s linear infinite reverse;
+}
+
+
+@keyframes orbita-giro {
+
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+
+}
+
+
+.universo-etiqueta {
+  position: absolute;
+
+  padding: 11px 15px;
+
+  border: 1px solid rgba(23, 33, 60, 0.08);
+  border-radius: 999px;
+
+  background-color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  box-shadow:
+    0 12px 30px rgba(23, 33, 60, 0.07);
+}
+
+
+.etiqueta-uno {
+  top: 10%;
+  left: 12%;
+
+  transform: rotate(-5deg);
+}
+
+
+.etiqueta-dos {
+  top: 25%;
+  right: 1%;
+
+  background-color: #f8ddd3;
+
+  transform: rotate(4deg);
+}
+
+
+.etiqueta-tres {
+  bottom: 12%;
+  left: 17%;
+
+  background-color: #dfeff1;
+
+  transform: rotate(3deg);
+}
+
+
+.universo-coordenada {
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #17213c;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+
+.coordenada-uno {
+  top: 7%;
+  right: 26%;
+
+  background-color: #a8add7;
+}
+
+
+.coordenada-dos {
+  bottom: 20%;
+  right: 6%;
+
+  background-color: #ee9b7b;
+}
+
+
+.coordenada-tres {
+  bottom: 4%;
+  left: 43%;
+
+  background-color: #91c7cf;
+}
+
+
+/* =========================================================
+   DECORACIÓN FONDO TEST
+========================================================= */
+
+.test-fondo-circulo {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.test-circulo-uno {
+  width: 420px;
+  height: 420px;
+
+  top: -200px;
+  right: -130px;
+
+  background-color: rgba(255, 224, 128, 0.33);
+}
+
+
+.test-circulo-dos {
+  width: 290px;
+  height: 290px;
+
+  left: -140px;
+  bottom: -140px;
+
+  background-color: rgba(145, 199, 207, 0.22);
+}
+
+
+.test-ruta {
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: 4%;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: 2px dashed rgba(23, 33, 60, 0.05);
+  border-radius: 50%;
+}
+
+
+.ruta-punto {
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background-color: #17213c;
+}
+
+
+.ruta-uno {
+  top: 10%;
+  left: 23%;
+}
+
+
+.ruta-dos {
+  top: 52%;
+  right: -4px;
+}
+
+
+.ruta-tres {
+  bottom: 5%;
+  left: 39%;
+}
+
+
+.ruta-cuatro {
+  top: 43%;
+  left: -4px;
+}
+
+
+/* =========================================================
+   MINI TITULOS
+========================================================= */
+
+.home-mini {
+  margin-bottom: 17px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  color: #7583a1;
+}
+
+
+/* =========================================================
+   MEZCLADOR
+========================================================= */
+
+.mezclador {
+  position: relative;
+
+  padding: 70px 7% 64px;
+
+  overflow: hidden;
+
+  background-color: #e8eef3;
+
+  color: #17213c;
+
+  border-bottom: 1px solid rgba(23, 33, 60, 0.09);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.mezclador-encabezado {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 900px;
+
+  margin-bottom: 46px;
+}
+
+
+.mezclador .home-mini {
+  color: #65799a;
+}
+
+
+.mezclador-encabezado h2 {
+  margin-bottom: 21px;
+
+  font-size: clamp(50px, 5vw, 78px);
+
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+
+  color: #17213c;
+}
+
+
+.mezclador-encabezado > p:last-child {
+  max-width: 570px;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #5e6978;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.mezclador-grid {
+  position: relative;
+
+  z-index: 4;
+
+  display: grid;
+
+  grid-template-columns: 1fr 0.72fr;
+
+  gap: 7%;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   CONTROLES
+========================================================= */
+
+.mezclador-controles {
+  display: grid;
+
+  gap: 22px;
+}
+
+
+.mezclador-control {
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid rgba(23, 33, 60, 0.12);
+}
+
+
+.control-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 13px;
+}
+
+
+.control-superior > span {
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: rgba(23, 33, 60, 0.52);
+}
+
+
+.control-superior strong {
+  font-size: 12px;
+
+  color: #17213c;
+}
+
+
+.mezclador-control input {
+  width: 100%;
+
+  accent-color: #ee9b7b;
+
+  cursor: pointer;
+}
+
+
+.control-extremos {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 9px;
+}
+
+
+.control-extremos span {
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: rgba(23, 33, 60, 0.4);
+}
+
+
+/* =========================================================
+   WRAPPER TARJETA
+========================================================= */
+
+.mezclador-tarjeta-wrapper {
+  position: relative;
+
+  padding-top: 105px;
+}
+
+
+/* =========================================================
+   PERSONAJES
+========================================================= */
+
+.mezclador-personajes {
+  position: absolute;
+
+  z-index: 6;
+
+  width: 165px;
+  height: auto;
+
+  right: 28px;
+  top: -105px;
+
+  pointer-events: none;
+
+  filter:
+    drop-shadow(
+      0 12px 15px rgba(23, 33, 60, 0.13)
+    );
+}
+
+
+/* =========================================================
+   TARJETA DESCUBRIR
+========================================================= */
+
+.mezclador-descubrir {
+  position: relative;
+
+  z-index: 5;
+
+  padding: 38px;
+
+  border: 1px solid rgba(23, 33, 60, 0.07);
+  border-radius: 30px;
+
+  background-color: rgba(255, 255, 255, 0.92);
+
+  text-align: left;
+
+  box-shadow:
+    0 20px 55px rgba(23, 33, 60, 0.07);
+}
+
+
+.mezclador-descubrir h3 {
+  max-width: 420px;
+
+  margin-bottom: 20px;
+
+  font-size: 34px;
+  line-height: 1.05;
+
+  letter-spacing: -1.6px;
+
+  color: #17213c;
+}
+
+
+.mezclador-descubrir-texto {
+  max-width: 470px;
+
+  margin-bottom: 28px;
+
+  font-size: 14px;
+  line-height: 1.65;
+
+  color: #626a78;
+}
+
+
+.resultado-mezcla-mini {
+  margin-bottom: 12px;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 2.4px;
+
+  color: #7083a6;
+}
+
+
+/* =========================================================
+   BOTÓN DESCUBRIR
+========================================================= */
+
+.boton-descubrir-distrito {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 999px;
+
+  background-color: #ee9b7b;
+
+  color: #17213c;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+
+.boton-descubrir-distrito:hover {
+  transform: translateY(-3px);
+
+  background-color: #fff3b5;
+}
+
+
+/* =========================================================
+   RESULTADO
+========================================================= */
+
+.mezclador-resultado {
+  display: none;
+
+  position: relative;
+
+  z-index: 5;
+
+  padding: 38px;
+
+  scroll-margin-top: 40px;
+
+  border: 1px solid rgba(23, 33, 60, 0.07);
+  border-radius: 30px;
+
+  background-color: rgba(255, 255, 255, 0.92);
+
+  box-shadow:
+    0 20px 55px rgba(23, 33, 60, 0.07);
+}
+
+
+.resultado-planeta {
+  position: relative;
+
+  width: 105px;
+  height: 105px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 32px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ee9b7b,
+      #fff3b5
+    );
+
+  transition:
+    background 0.4s ease,
+    transform 0.4s ease;
+}
+
+
+.resultado-planeta > span {
+  font-family: "Righteous", sans-serif;
+
+  font-size: 38px;
+
+  color: #17213c;
+}
+
+
+.planeta-anillo {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  border: 1px solid rgba(23, 33, 60, 0.18);
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+.anillo-uno {
+  width: 135px;
+  height: 55px;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(-18deg);
+}
+
+
+.anillo-dos {
+  width: 150px;
+  height: 65px;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(28deg);
+}
+
+
+.mezclador-resultado h3 {
+  margin-bottom: 16px;
+
+  font-size: 34px;
+  line-height: 1.05;
+
+  letter-spacing: -1.6px;
+
+  color: #17213c;
+}
+
+
+.mezclador-resultado > p:last-of-type {
+  max-width: 420px;
+
+  margin-bottom: 28px;
+
+  font-size: 13px;
+  line-height: 1.65;
+
+  color: #626a78;
+}
+
+
+/* =========================================================
+   BOTÓN RECALCULAR
+========================================================= */
+
+.boton-recalcular-distrito {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 12px 18px;
+
+  border: 1px solid rgba(23, 33, 60, 0.16);
+  border-radius: 999px;
+
+  background-color: transparent;
+
+  color: #17213c;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.boton-recalcular-distrito:hover {
+  transform: translateY(-2px);
+
+  background-color: rgba(23, 33, 60, 0.05);
+}
+
+
+/* =========================================================
+   DATOS HOME
+========================================================= */
+
+.datos-home {
+  padding: 100px 7% 120px;
+
+  background-color: #f6f1e7;
+
+  color: #17213c;
+}
+
+
+.datos-home-encabezado {
+  max-width: 800px;
+
+  margin-bottom: 65px;
+}
+
+
+.datos-home-encabezado h2 {
+  font-size: clamp(48px, 5vw, 76px);
+
+  line-height: 0.96;
+
+  letter-spacing: -4px;
+}
+
+
+.datos-home-grid {
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr 1fr;
+
+  gap: 18px;
+}
+
+
+.dato-home {
+  position: relative;
+
+  min-height: 390px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 30px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(23, 33, 60, 0.07);
+  border-radius: 28px;
+}
+
+
+.dato-home::before {
+  content: "";
+
+  position: absolute;
+
+  width: 210px;
+  height: 210px;
+
+  top: -100px;
+  right: -70px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+
+.dato-home-uno {
+  background-color: #fff3b5;
+}
+
+
+.dato-home-dos {
+  background-color: #dfeff1;
+
+  transform: translateY(35px);
+}
+
+
+.dato-home-tres {
+  background-color: #f8ddd3;
+}
+
+
+.dato-home-indice {
+  position: absolute;
+
+  top: 27px;
+  left: 28px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  color: rgba(23, 33, 60, 0.55);
+}
+
+
+.dato-home strong {
+  margin-bottom: 12px;
+
+  font-size: clamp(70px, 7vw, 115px);
+  line-height: 0.8;
+
+  letter-spacing: -7px;
+}
+
+
+.dato-home-titulo {
+  margin-bottom: 14px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.dato-home-texto {
+  max-width: 310px;
+
+  font-size: 12px;
+  line-height: 1.6;
+
+  color: #5f6572;
+}
+
+
+/* =========================================================
+   DESTINO
+========================================================= */
+
+.destino-home {
+  position: relative;
+
+  padding: 120px 7%;
+
+  overflow: hidden;
+
+  background-color: #ececf8;
+
+  color: #17213c;
+}
+
+
+.destino-linea {
+  position: absolute;
+
+  width: 750px;
+  height: 750px;
+
+  right: -330px;
+  top: -330px;
+
+  border: 2px dashed rgba(23, 33, 60, 0.08);
+  border-radius: 50%;
+}
+
+
+.destino-home-contenido {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1fr;
+
+  align-items: center;
+
+  gap: 9%;
+}
+
+
+.destino-home-texto h2 {
+  margin-bottom: 25px;
+
+  font-size: clamp(48px, 5vw, 76px);
+
+  line-height: 0.96;
+
+  letter-spacing: -4px;
+}
+
+
+.destino-home-texto > p:last-child {
+  max-width: 520px;
+
+  font-size: 14px;
+  line-height: 1.75;
+
+  color: #646b78;
+}
+
+
+/* =========================================================
+   TICKET
+========================================================= */
+
+.destino-ticket {
+  padding: 36px;
+
+  border: 1px solid rgba(23, 33, 60, 0.08);
+  border-radius: 30px;
+
+  background-color: #ffffff;
+
+  box-shadow:
+    0 25px 70px rgba(23, 33, 60, 0.08);
+}
+
+
+.ticket-superior {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 24px;
+
+  border-bottom: 1px dashed rgba(23, 33, 60, 0.17);
+}
+
+
+.ticket-superior span {
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #768198;
+}
+
+
+.ticket-superior strong {
+  font-size: 12px;
+}
+
+
+.ticket-centro {
+  padding: 40px 0;
+}
+
+
+.ticket-centro > p {
+  margin-bottom: 10px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #74819c;
+}
+
+
+.ticket-centro h3 {
+  margin-bottom: 15px;
+
+  font-size: 48px;
+
+  line-height: 1;
+
+  letter-spacing: -2.5px;
+}
+
+
+.ticket-centro > span {
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: #626977;
+}
+
+
+.ticket-acciones {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.ticket-acciones button,
+.ticket-acciones a {
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  padding: 0 18px;
+
+  border-radius: 999px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+
+.ticket-acciones button {
+  border: 1px solid rgba(23, 33, 60, 0.13);
+
+  background-color: transparent;
+
+  color: #17213c;
+}
+
+
+.ticket-acciones a {
+  border: none;
+
+  background-color: #17213c;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+
+.ticket-acciones button:hover,
+.ticket-acciones a:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .home-test-grid,
+  .mezclador-grid,
+  .destino-home-contenido {
+    grid-template-columns: 1fr;
+  }
+
+
+  .test-universo {
+    margin: 50px auto 0;
+  }
+
+
+  .mezclador-tarjeta-wrapper {
+    max-width: 650px;
+
+    margin-top: 40px;
+  }
+
+
+  .datos-home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .dato-home-tres {
+    grid-column: 1 / 3;
+  }
+
+
+  .dato-home-dos {
+    transform: none;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .home-test,
+  .datos-home,
+  .destino-home {
+    padding: 80px 6%;
+  }
+
+
+  .mezclador {
+    padding: 60px 6% 58px;
+  }
+
+
+  .home-test .test-encabezado h2,
+  .mezclador-encabezado h2,
+  .datos-home-encabezado h2,
+  .destino-home-texto h2 {
+    font-size: 44px;
+
+    letter-spacing: -2.5px;
+  }
+
+
+  .test-universo {
+    max-width: 420px;
+  }
+
+
+  .universo-centro {
+    width: 190px;
+    height: 190px;
+  }
+
+
+  .orbita-uno {
+    width: 290px;
+    height: 290px;
+  }
+
+
+  .orbita-dos {
+    width: 390px;
+    height: 390px;
+  }
+
+
+  .mezclador-encabezado {
+    margin-bottom: 32px;
+  }
+
+
+  .mezclador-tarjeta-wrapper {
+    padding-top: 82px;
+  }
+
+
+  .mezclador-personajes {
+    width: 145px;
+
+    top: -78px;
+    right: 12px;
+  }
+
+
+  .mezclador-descubrir,
+  .mezclador-resultado {
+    padding: 30px 24px;
+  }
+
+
+  .mezclador-descubrir h3,
+  .mezclador-resultado h3 {
+    font-size: 29px;
+  }
+
+
+  .datos-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .dato-home-tres {
+    grid-column: auto;
+  }
+
+
+  .dato-home {
+    min-height: 310px;
+  }
+
+
+  .ticket-acciones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  .ticket-acciones button,
+  .ticket-acciones a {
+    width: 100%;
+  }
+}
+/* =========================================================
+   CORRECCIONES FINALES HOME
+   HERO + TÍTULO DATOS + TEXTOS JUSTIFICADOS
+========================================================= */
+
+
+/* =========================================================
+   HERO — ACERCAR ZOOTOPIA AL BLOQUE INFERIOR
+========================================================= */
+
+/*
+   Bajamos únicamente el título.
+   El texto y el botón quedan donde ya estaban.
+*/
+
+.pagina-home .hero-title {
+  transform: translateY(28px);
+}
+
+
+/* =========================================================
+   LA CIUDAD EN NÚMEROS — TÍTULO MÁS CHICO
+========================================================= */
+
+.datos-home-encabezado {
+  max-width: 760px;
+
+  margin-bottom: 58px;
+}
+
+
+.datos-home-encabezado h2 {
+  max-width: 760px;
+
+  font-size: clamp(38px, 3.8vw, 58px);
+
+  line-height: 1;
+
+  letter-spacing: -2.8px;
+}
+
+
+/* =========================================================
+   TEXTOS CORRIDOS JUSTIFICADOS
+========================================================= */
+
+/* TEST */
+
+.home-test .test-bajada {
+  text-align: justify;
+
+  text-align-last: left;
+}
+
+
+/* MEZCLADOR */
+
+.mezclador-encabezado > p:last-child {
+  text-align: justify;
+
+  text-align-last: left;
+}
+
+
+.mezclador-descubrir-texto {
+  text-align: justify;
+
+  text-align-last: left;
+}
+
+
+.mezclador-resultado > p:last-of-type {
+  text-align: justify;
+
+  text-align-last: left;
+}
+
+
+/* DATOS */
+
+.dato-home-texto {
+  text-align: justify;
+
+  text-align-last: left;
+}
+
+
+/* DESTINO ALEATORIO */
+
+.destino-home-texto > p:last-child {
+  text-align: justify;
+
+  text-align-last: left;
+}
+
+
+.ticket-centro > span {
+  display: block;
+
+  text-align: justify;
+
+  text-align-last: left;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  /*
+     En celular no necesitamos bajar tanto Zootopia
+     porque hay menos espacio vertical.
+  */
+
+  .pagina-home .hero-title {
+    transform: translateY(15px);
+  }
+
+
+  .datos-home-encabezado h2 {
+    font-size: 38px;
+
+    line-height: 1.02;
+
+    letter-spacing: -2px;
+  }
+
+}
+/* =========================================================
+   JUSTIFICACIÓN DE TEXTOS — HOME
+========================================================= */
+
+/* Párrafos de lectura */
+
+.home-test .test-bajada,
+.mezclador-encabezado > p:last-child,
+.mezclador-descubrir-texto,
+.mezclador-resultado > p:last-of-type,
+.dato-home-texto,
+.destino-home-texto > p:last-child,
+.ticket-centro > span {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
